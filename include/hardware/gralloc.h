@@ -234,6 +234,14 @@ typedef struct gralloc_module_t {
             buffer_handle_t handle);
 
 
+#ifdef EXYNOS4210_ENHANCEMENTS
+    /*
+     * Unknown, used for samsung omx plugins
+     */
+    int (*getphys) (struct gralloc_module_t const* module,
+            buffer_handle_t handle, int *paddr);
+#endif
+
     /* reserved for future use */
     int (*perform)(struct gralloc_module_t const* module,
             int operation, ... );
