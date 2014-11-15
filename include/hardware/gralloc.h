@@ -111,6 +111,12 @@ enum {
     /* buffer will be used as a RenderScript Allocation */
     GRALLOC_USAGE_RENDERSCRIPT          = 0x00100000,
 
+    GRALLOC_USAGE_HW_FIMC1              = 0x01000000,
+    GRALLOC_USAGE_HW_ION                = 0x02000000,
+    GRALLOC_USAGE_YUV_ADDR              = 0x04000000,
+    /* SEC Private usage , for Overlay path at HWC */
+    GRALLOC_USAGE_HWC_HWOVERLAY         = 0x20000000,
+
     /* buffer should be displayed full-screen on an external display when
      * possible
      */
