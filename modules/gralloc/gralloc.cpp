@@ -71,11 +71,7 @@ extern int gralloc_unregister_buffer(gralloc_module_t const* module,
 
 #ifdef EXYNOS4210_ENHANCEMENTS
 extern int gralloc_getphys(gralloc_module_t const* module,
-        buffer_handle_t handle, int *paddr) {
-        /* unknown implementation
-           returning 0 works somehow */
-        return 0;
-}
+        buffer_handle_t handle)
 #endif
 
 /*****************************************************************************/
